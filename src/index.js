@@ -19,6 +19,8 @@ let initialState = {
    location:location.pathname.replace(/^\/?|\/$/g,''),
    auth
 }
-window.setState(initialState);
+ window.setState(initialState);
+// ------------------------------------
+
 
 serviceWorker.unregister();

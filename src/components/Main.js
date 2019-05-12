@@ -10,9 +10,12 @@ class Main extends Component{
 {/*                  */}
                 <h1 className='App-title'>
                 Hi, {this.props.name}. Here is the Main page</h1>
-                {/* </header>  */}
-                <p>log in</p> 
-                <button onClick ={this.props.auth.login}></button>
+                {!this.props.auth.isAuthenticated()&&
+                <div>
+                    <p>log in</p>
+                    <button onClick ={this.props.auth.login} ></button>
+                </div>
+                }
             </div>
         )
     }

@@ -17,12 +17,14 @@ class App extends Component {
         break;
         
       case 'secret':
-        mainComp= <Secret />;
+          // mainComp = <Secret {...this.props}/>;
+          //  console.log('auth?',this.props.auth.isAuthenticated )
+          mainComp= this.props.auth.isAuthenticated() ? <Secret {...this.props} /> : <NotFound/>;
         break;
         
       default:
         return <NotFound />;
-  };
+   };
 
 
   return (
@@ -38,3 +40,6 @@ class App extends Component {
   }
 };
 export default App;
+// -------------------------------------------------------------------
+
+
