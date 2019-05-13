@@ -13,7 +13,7 @@ class Main extends Component{
                 {!this.props.auth.isAuthenticated()&&
                 <div>
                     <p>log in</p>
-                    <button onClick ={this.props.auth.login} ></button>
+                    <button onClick ={this.props.auth.login} className='btn btn-sm'>Log In</button>
                 </div>
                 }
             </div>

@@ -20,7 +20,7 @@
 // src/Callback/Callback.js
 
 import React, { Component } from 'react';
-import gif from './gif.gif';
+import giphy from '../giphy.gif';
 
 class Callback extends Component {
   render() {
@@ -35,12 +35,15 @@ class Callback extends Component {
         left: 0,
         right: 0,
         backgroundColor: 'white',
-        backgroundImage: url('https://media.giphy.com/media/Vov4SPSPhxl8k/giphy.gif')
+        
       }
 
     return (
       <div style={style}>
-        <img src={gif} alt="loading"/>
+        <img src={giphy} alt="loading"/>
+        <div>
+                Loading...
+        </div>
       </div>
     );
   }

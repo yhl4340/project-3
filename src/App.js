@@ -5,10 +5,11 @@ import Main from './components/Main';
 import Secret from './components/Secret';
 import NotFound from './components/Notfound';
 import Auth from './Auth';
+import Callback from './components/Callback';
+
 
 
 class App extends Component {
-
   render() {
     let mainComp = '';
     switch(this.props.location){
@@ -16,10 +17,13 @@ class App extends Component {
         mainComp= <Main {...this.props}/>;
         break;
         
+      case 'Callback':
+        mainComp = <Callback/>;
+        break;
       case 'secret':
-          // mainComp = <Secret {...this.props}/>;
-          //  console.log('auth?',this.props.auth.isAuthenticated )
-          mainComp= this.props.auth.isAuthenticated() ? <Secret {...this.props} /> : <NotFound/>;
+          mainComp = <Secret {...this.props}/>;
+           console.log('auth?',this.props.auth.isAuthenticated )
+          // mainComp= this.props.auth.isAuthenticated() ? <Secret {...this.props} /> : <NotFound/>;
         break;
         
       default:
