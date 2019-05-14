@@ -6,7 +6,7 @@ import Auth from './Auth';
 import * as serviceWorker from './serviceWorker';
 
 const auth = new Auth();
-
+// auth.login();
 let state = {};
 window.setState = (changes) => {
     state = Object.assign({},state, changes);

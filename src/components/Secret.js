@@ -6,7 +6,7 @@ class Secret extends Component {
     return(
         <div>
                  
-            <h3>Secret,not the route</h3>
+            <h3>Secret,shhh</h3>
             <button onClick={this.props.auth.logout}>Log Out</button>
           
         </div>

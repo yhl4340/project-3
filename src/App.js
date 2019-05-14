@@ -8,8 +8,8 @@ import Auth from './Auth';
 import Callback from './components/Callback';
 
 
-
 class App extends Component {
+
   render() {
     let mainComp = '';
     switch(this.props.location){
@@ -17,13 +17,15 @@ class App extends Component {
         mainComp= <Main {...this.props}/>;
         break;
         
-      case 'Callback':
+      case 'callback':
+      console.log('callaback', this.props.location);
         mainComp = <Callback/>;
         break;
       case 'secret':
-          mainComp = <Secret {...this.props}/>;
-           console.log('auth?',this.props.auth.isAuthenticated )
-          // mainComp= this.props.auth.isAuthenticated() ? <Secret {...this.props} /> : <NotFound/>;
+      // console.log('secret', this.props.location);
+      //     mainComp = <Secret {...this.props}/>;
+        console.log('auth?',this.props.auth.isAuthenticated )
+        mainComp= this.props.auth.isAuthenticated() ? <Secret {...this.props} /> : <NotFound/>;
         break;
         
       default:

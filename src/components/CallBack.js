@@ -21,8 +21,13 @@
 
 import React, { Component } from 'react';
 import giphy from '../giphy.gif';
+import Auth from '../Auth';
 
 class Callback extends Component {
+  componentDidMount (){
+            const auth = new Auth ();
+            auth.handleAuthentication();
+        }
   render() {
     const style = {
         position: 'absolute',
@@ -40,7 +45,7 @@ class Callback extends Component {
 
     return (
       <div style={style}>
-        <img src={giphy} alt="loading"/>
+        <img src={giphy} id='loading' alt="loading"/>
         <div>
                 Loading...
         </div>
