@@ -7,6 +7,7 @@ import * as serviceWorker from './serviceWorker';
 
 const auth = new Auth();
 // auth.login();
+
 let state = {};
 window.setState = (changes) => {
     state = Object.assign({},state, changes);
@@ -14,8 +15,12 @@ window.setState = (changes) => {
     ReactDOM.render(<App {...state} />, document.getElementById('root'));
 }
 /* eslint no-restricted-globals:0*/
+let userName = auth.getProfile().given_name || 'User';
+let userPic = auth.getProfile().picture;
+
 let initialState = {
-    name: 'Yin',
+    name: userName,
+    pic: userPic,
    location:location.pathname.replace(/^\/?|\/$/g,''),
    auth
 }

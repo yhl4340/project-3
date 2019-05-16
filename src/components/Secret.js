@@ -8,6 +8,8 @@ class Secret extends Component {
                  
             <h3>Secret,shhh</h3>
             <button onClick={this.props.auth.logout}>Log Out</button>
+            {/* <h5><a href='/'>Go Back</a></h5> */}
+            
           
         </div>
     )

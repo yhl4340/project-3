@@ -23,7 +23,25 @@
 .App-link {
   color: #61dafb;
 }
-
+h1 img{
+  width:150px;
+  height:150px;
+  float: left;
+}
+h1 span {
+ vertical-align: middle;
+ display: inline-block;
+ margin-top:30px;
+}
+#loading {
+  width:180px;
+  height:100px;
+  margin-top:300px;
+}
+h5, #icon {
+  text-align: center;
+  margin: 0 auto;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -31,9 +49,4 @@
   to {
     transform: rotate(360deg);
   }
-}
-#loading {
-  width:180px;
-  height:100px;
-  margin-top:300px;
 }
