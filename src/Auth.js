@@ -10,6 +10,8 @@ dotenv.config();
 const LOGIN_FAILURE = '/';
 
 export default class Auth {
+ 
+ 
   auth0 = new auth0.WebAuth({
     // domain: process.env.AUTH0_DOMAIN,
     // clientID: process.env.AUTH0_CLIENT_ID,
@@ -21,6 +23,7 @@ export default class Auth {
     responseType: 'token id_token', 
     scope: 'openid profile'
   });
+
 constructor(){
       this.login = this.login.bind(this);
       this.logout = this.logout.bind(this);
@@ -31,11 +34,11 @@ constructor(){
   //     this.renewSession = this.renewSession.bind(this);
    }
    
+  
   login()  {
     this.auth0.authorize();
     console.log('here?')
-  };
-  // auth.login();
+  }
   
 //  will redirect to login
 
@@ -61,15 +64,20 @@ constructor(){
     localStorage.removeItem('accesss_token');
     localStorage.removeItem('id_token');
     localStorage.removeItem('expires_at');
-    location.pathname = LOGIN_SUCCESS;
+    location.pathname = LOGIN_FAILURE;
     console.log('out'); 
+    // this.auth0.logout({
+    //   returnTo: LOGIN_FAILURE
+    // });
   }
+
   isAuthenticated () {
     // Check whether the current time is past the
     // access token's expiry time
     let expiresAt = JSON.parse(localStorage.getItem('expires_at'));
     return new Date().getTime() < expiresAt;
   }
+
   getProfile(){
     if(localStorage.getItem('id_token')){
       return jwtDecode(localStorage.getItem('id_token'))
@@ -77,19 +85,19 @@ constructor(){
       return {}
     }
   }
-  renewSession() {
-    this.auth0.checkSession({}, (err, authResults) => {
-       if (authResults && authResults.accessToken && authResults.idToken) {
-         this.setSession(authResults);
-       } else if (err) {
-         this.logout();
-         console.log(err);
-         alert(`Could not get a new token (${err.error}: ${err.error_description}).`);
-       }
-    });
-  }
+  // renewSession() {
+  //   this.auth0.checkSession({}, (err, authResults) => {
+  //      if (authResults && authResults.accessToken && authResults.idToken) {
+  //        this.setSession(authResults);
+  //      } else if (err) {
+  //        this.logout();
+  //        console.log(err);
+  //        alert(`Could not get a new token (${err.error}: ${err.error_description}).`);
+  //      }
+  //   });
+  // }
 
-}
+};
 
 // -----------------------------------------------------------
 // src/Auth/Auth.js

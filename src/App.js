@@ -15,7 +15,7 @@ library.add(faExclamationCircle)
 
 class App extends Component {
 
- 
+  
   render() {
     let mainComp = '';
     switch(this.props.location){
