@@ -11,12 +11,12 @@ class Main extends Component{
                 {/* <img src={this.props.pic}/> */}
                 </p>
                 </h1>
-                {/* {!this.props.auth.isAuthenticated()&& */}
+                {!this.props.auth.isAuthenticated()&&
                 <div>
                     {/* <p>log in</p> */}
                     <button onClick={this.props.auth.login} className='btn btn-lg'>Log In</button>
                 </div>
-                
+                }
             </div>
         )
     }
