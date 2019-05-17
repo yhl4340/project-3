@@ -41,13 +41,14 @@ class App extends Component {
 
   return (
     <div className="App">
+      <Nav/>
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+       
       
         <h1><span>Welcome,{this.props.name}</span>
         <img src={this.props.pic}/> 
         </h1>
-        <a href='/' style={{marginLeft:1000}}>Go Back</a>
+        {/* <a href='/' style={{marginLeft:1000}}>Go Back</a> */}
         
       
       </header>
