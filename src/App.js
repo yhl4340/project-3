@@ -7,6 +7,8 @@ import NotFound from './components/Notfound';
 import Auth from './Auth';
 import Callback from './components/Callback';
 import Nav from './components/Nav';
+import Landing from './components/pages/Landing';
+
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faExclamationCircle } from '@fortawesome/free-solid-svg-icons';
@@ -19,6 +21,9 @@ class App extends Component {
   render() {
     let mainComp = '';
     switch(this.props.location){
+      case '/':
+        mainComp= <Landing />;
+        break;
       case '':
         mainComp= <Main {...this.props}/>;
         break;
@@ -41,6 +46,7 @@ class App extends Component {
 
   return (
     <div className="App">
+      {/* <Landing/> */}
       <Nav/>
       <header className="App-header">
        

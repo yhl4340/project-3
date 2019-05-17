@@ -1,5 +1,8 @@
 .App {
   text-align: center;
+  font-family: 'Schoolbell', cursive;
+  /* font-family: 'Luckiest Guy', cursive; */
+  
 }
 
 .App-logo {
@@ -23,6 +26,14 @@
 .App-link {
   color: #61dafb;
 }
+#body{
+  background-image: url('./paw2.png');
+  /* moz-transform: rotate(212deg) translate(-14px, 3px);
+  webkit-transform: rotate(212deg) translate(-14px, 3px);
+  o-transform: rotate(212deg) translate(-14px, 3px);
+  ms-transform: rotate(212deg) translate(-14px, 3px);
+  transform: rotate(212deg) translate(-14px, 3px); */
+}
 h1 img{
   width:150px;
   height:150px;
@@ -37,6 +48,9 @@ h1 span {
   width:180px;
   height:100px;
   margin-top:300px;
+}
+a nav-item {
+  font-size:24px;
 }
 h5, #icon {
   text-align: center;
