@@ -32,7 +32,7 @@ function Nav(props) {
             About Dogs
           </a>
         </li>
-        <li className="nav-item">
+        {/* <li className="nav-item">
           <a
             href="#logout"
             onClick={() => props.handlePageChange("logout")}
@@ -40,7 +40,7 @@ function Nav(props) {
           >
             Log out
           </a>
-        </li>
+        </li> */}
       </ul>
     </div>
     );

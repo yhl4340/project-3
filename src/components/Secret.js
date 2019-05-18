@@ -2,7 +2,9 @@ import React, {Component} from 'react';
 import logo from '../logo.svg';
 
 class Secret extends Component {
+    
     render(){
+        console.log('getting here?')
     return(
         <div>
                  

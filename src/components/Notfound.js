@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 
 function NotFound (){
+    console.log('3rd')
     return(
         <div>
             <h2 style={{textAlign:'center'}}>Oh no...</h2>
@@ -13,4 +14,3 @@ function NotFound (){
 }
 export default NotFound;
 
-{/* <i class="fas fa-exclamation-circle"></i> */}

@@ -4,17 +4,18 @@ import Auth from '../Auth';
 import Jumbotron from './Jumbotron';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { FaHeart } from 'react-icons/fa';
-import Nav from './Nav';
+
 
 class Main extends Component{
 
     render(){
+        console.log('test');
         return(
-            <div className='container-fluid'>
-            <Jumbotron/>
-           
+            <div>
+            <div className='container-flulid'>
+            <Jumbotron/>  
             <h2> A dog's Love
-            <FontAwesomeIcon id='heartIcon' icon="FaHeart" size='4x'  />
+            <FontAwesomeIcon icon="FaHeart" size='4x'  />
             </h2>
             {/* //     <h1 className='App-title'>
             //     <p>Hey {this.props.name}, Here is the Main page
@@ -24,8 +25,10 @@ class Main extends Component{
                 {/* {!this.props.auth.isAuthenticated()&& */}
                  {/* <div> */}
       
-                    <button onClick={this.props.auth.login} className='btn btn-lg'>Log In</button>
+                    <button onClick={this.props.auth.login} className='btn btn-lg-primary'>Log In</button>
             </div>
+            </div>
+
         )
     }
 }

@@ -8,6 +8,8 @@ var dotenv = require('dotenv');
 dotenv.config();
  const LOGIN_SUCCESS = '/secret';
 const LOGIN_FAILURE = '/';
+const logoutDomain = 'https://dev-67ou39ym.auth0.com/v2/logout';
+
 
 export default class Auth {
  
@@ -64,7 +66,12 @@ constructor(){
     localStorage.removeItem('accesss_token');
     localStorage.removeItem('id_token');
     localStorage.removeItem('expires_at');
-    location.pathname = LOGIN_FAILURE;
+    // location = logoutDomain;
+    
+    this.auth0.logout({
+    returnTo: location.origin
+    });
+
     console.log('out'); 
     // this.auth0.logout({
     //   returnTo: LOGIN_FAILURE

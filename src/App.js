@@ -15,23 +15,23 @@ import { faExclamationCircle} from '@fortawesome/free-solid-svg-icons';
 library.add(faExclamationCircle)
 
 class App extends Component {
-
-  
   render() {
     let mainComp = '';
-    switch(this.props.location){
+    console.log(this.props)   
+    console.log(window.location.pathname)
+    switch(window.location.pathname){
       case '/':
-        mainComp= <Jumbotron/>;
+        mainComp= <Main {...this.props}/>;
         break;
       case '':
         mainComp= <Main {...this.props}/>;
         break;
         
-      case 'callback':
+      case '/callback':
       console.log('callaback', this.props.location);
         mainComp = <Callback/>;
         break;
-      case 'secret':
+      case '/secret':
       // console.log('secret', this.props.location);
       //     mainComp = <Secret {...this.props}/>;
         console.log('auth?',this.props.auth.isAuthenticated )
@@ -39,27 +39,26 @@ class App extends Component {
         break;
         
       default:
-        return <NotFound />;
+        mainComp= <NotFound />;
    };
 
 
   return (
     // <Router>
-      <div>     
-        <Jumbotron/>
-         {/* <Nav/> */}
-         {/* <Switch>
+    <div>
+      {/* <Jumbotron /> */}
+      {mainComp}
+      {/* <Nav/> */}
+      {/* <Switch>
          <Route exact path="/" component={Books} />
          </Switch> */}
-      
 
-    {/* // </Router>
-  */}
-{/*      
+      {/* // </Router>
+       */}
+      {/*      
       <header className="App-header"> */}
-       
-      
-        {/* <h1><span>Welcome,{this.props.name}</span>
+
+      {/* <h1><span>Welcome,{this.props.name}</span>
         <img src={this.props.pic}/> 
         </h1>
       </header>
@@ -69,6 +68,6 @@ class App extends Component {
   }
 };
 export default App;
-// -------------------------------------------------------------------
+
 
 
