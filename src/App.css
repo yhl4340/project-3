@@ -26,13 +26,16 @@
 .App-link {
   color: #61dafb;
 }
-#body{
-  background-image: url('./paw2.png');
-  /* moz-transform: rotate(212deg) translate(-14px, 3px);
-  webkit-transform: rotate(212deg) translate(-14px, 3px);
-  o-transform: rotate(212deg) translate(-14px, 3px);
-  ms-transform: rotate(212deg) translate(-14px, 3px);
-  transform: rotate(212deg) translate(-14px, 3px); */
+
+.jumbotron{
+  background-image: url('./paw1.png');
+  height: 100vh;
+  background-size:cover;
+}
+a.nav-link {
+  color:white;
+  margin-top:-30px;
+  font-size:22px;
 }
 h1 img{
   width:150px;

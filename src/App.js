@@ -7,11 +7,10 @@ import NotFound from './components/Notfound';
 import Auth from './Auth';
 import Callback from './components/Callback';
 import Nav from './components/Nav';
-import Landing from './components/pages/Landing';
-
+import Jumbotron from './components/Jumbotron';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faExclamationCircle } from '@fortawesome/free-solid-svg-icons';
+import { faExclamationCircle} from '@fortawesome/free-solid-svg-icons';
 
 library.add(faExclamationCircle)
 
@@ -22,7 +21,7 @@ class App extends Component {
     let mainComp = '';
     switch(this.props.location){
       case '/':
-        mainComp= <Landing />;
+        mainComp= <Jumbotron/>;
         break;
       case '':
         mainComp= <Main {...this.props}/>;
@@ -45,20 +44,26 @@ class App extends Component {
 
 
   return (
-    <div className="App">
-      {/* <Landing/> */}
-      <Nav/>
-      <header className="App-header">
+    // <Router>
+      <div>     
+        <Jumbotron/>
+         {/* <Nav/> */}
+         {/* <Switch>
+         <Route exact path="/" component={Books} />
+         </Switch> */}
+      
+
+    {/* // </Router>
+  */}
+{/*      
+      <header className="App-header"> */}
        
       
-        <h1><span>Welcome,{this.props.name}</span>
+        {/* <h1><span>Welcome,{this.props.name}</span>
         <img src={this.props.pic}/> 
         </h1>
-        {/* <a href='/' style={{marginLeft:1000}}>Go Back</a> */}
-        
-      
       </header>
-      <h4>Routes: {mainComp}</h4>
+      <h4>Routes: {mainComp}</h4> */}
     </div>
   );
   }
