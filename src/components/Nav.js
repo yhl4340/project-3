@@ -4,17 +4,9 @@ import Auth from "../Auth";
 function Nav(props) {
 
     return (
-    <div className='row justify-content-end'>
+    <div className='row justify-content-end mt-auto'>
       <ul className="nav nav-tabs">
-        {/* <li className="nav-item">
-          <a
-            href="/"
-            onClick={() => props.handlePageChange("Home")}
-            className={props.currentPage === "Home" ? "nav-link active" : "nav-link"}
-          >
-            Home
-          </a>
-        </li> */}
+        
         <li className="nav-item">
           <a
             href="#about"

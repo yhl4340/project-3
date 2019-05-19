@@ -56,11 +56,21 @@ h2{
   color:white;
 }
 a.nav-link {
-  color:white;
-  margin-right:50px;
-  
+  color:gray;
+  margin-right:30px;
   font-size:20px;
 }
+#login{
+  margin-left:1350px;
+  margin-top:-75px;
+  z-index: 10;
+  background:none!important;
+  border:none; 
+  padding:0!important;
+  color:white;
+  font-size:20px;
+}
+
 /* h1 img{
   width:150px;
   height:150px;
