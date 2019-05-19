@@ -50,10 +50,16 @@ body{
   left: 0;  
 
 }
-h2{
-  font-size:44px;
+h1{
+  font-size:80px;
   font-weight: bold;
   color:white;
+}
+h3 {
+  color:white;
+  margin-top:150px;
+  margin-left:180px;
+  
 }
 a.nav-link {
   color:gray;

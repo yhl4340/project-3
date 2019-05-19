@@ -1,9 +1,9 @@
 import React, { Component } from "react";
-import logo from "../logo.svg";
 import Auth from "../Auth";
 import Nav from "./Nav";
+import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { FaHeart } from "react-icons/fa";
+import { faHeart } from "react-icons/fa";
 
 class Main extends Component {
   render() {
@@ -20,10 +20,15 @@ class Main extends Component {
                     Log In
             </button>
             </a>
-            <h2>
+            <h1>
                 A Dog's Love
-                <FontAwesomeIcon icon="FaHeart" size="4x" />
-            </h2>
+                <FontAwesomeIcon icon="faHeart" size="4x" />
+            </h1>
+            <h3>
+               <p> One in Five dogs never leaves the shelther</p>
+                <br/>
+                <p>Let's adopt better!</p> 
+            </h3>
 
         {/* //     <h1 className='App-title'>
             // //     <p>Hey {this.props.name}, Here is the Main page
