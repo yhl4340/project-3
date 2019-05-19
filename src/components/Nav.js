@@ -1,11 +1,12 @@
 import React from "react";
+import Auth from "../Auth";
 
 function Nav(props) {
 
     return (
     <div className='row justify-content-end'>
       <ul className="nav nav-tabs">
-        <li className="nav-item">
+        {/* <li className="nav-item">
           <a
             href="/"
             onClick={() => props.handlePageChange("Home")}
@@ -13,7 +14,7 @@ function Nav(props) {
           >
             Home
           </a>
-        </li>
+        </li> */}
         <li className="nav-item">
           <a
             href="#about"

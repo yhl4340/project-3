@@ -26,7 +26,6 @@ class App extends Component {
       case '':
         mainComp= <Main {...this.props}/>;
         break;
-        
       case '/callback':
       console.log('callaback', this.props.location);
         mainComp = <Callback/>;
@@ -41,8 +40,6 @@ class App extends Component {
       default:
         mainComp= <NotFound />;
    };
-
-
   return (
     // <Router>
     <div>
