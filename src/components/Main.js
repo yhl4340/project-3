@@ -5,8 +5,6 @@ import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import icon from '../paw_icon.png'
 
-
-
 class Main extends Component {
   render() {
     console.log("test");
@@ -25,7 +23,6 @@ class Main extends Component {
             <h1>
                 A Dog's Love
                 <img src={icon} id='pawIcon'alt='icon'></img>
-                {/* <FontAwesomeIcon icon="faPaw" size="4x" /> */}
             </h1>
             <h3>
               <p> One in Five dogs never leave the shelter

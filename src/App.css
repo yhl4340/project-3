@@ -97,15 +97,15 @@ a.nav-link {
   margin-bottom:40px;
 }
 
-/* h1 img{
-  width:150px;
-  height:150px;
+.welcomeMsg img{
+  width:100px;
+  height:100px;
   float: left;
-}
-h1 span {
+} 
+.welcomeMsg span {
  vertical-align: middle;
  display: inline-block;
- margin-top:30px;
+ font-size:40px;
 } */
 #loading {
   width:180px;
@@ -115,9 +115,12 @@ h1 span {
 a nav-item {
   font-size:24px;
 }
-h5, #icon {
-  text-align: center;
-  margin: 0 auto;
+.notFoundLink{
+ 
+  margin-left: 50%;
+}
+#icon {
+  margin-left:50%;
 }
 @keyframes App-logo-spin {
   from {

@@ -1,5 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { blockStatement } from '@babel/types';
 
 
 function NotFound (){
@@ -8,7 +9,7 @@ function NotFound (){
         <div>
             <h2 style={{textAlign:'center'}}>Oh no...</h2>
             <FontAwesomeIcon id='icon' icon="exclamation-circle" size='4x'  />
-            <h5><a href='/'style={{textAlign:'center'}}>Go Back</a></h5>
+            <div className='notFoundLink'><a href='/'>Go Back</a></div>
         </div>
     )
 }

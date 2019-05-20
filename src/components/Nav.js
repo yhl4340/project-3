@@ -25,15 +25,6 @@ function Nav(props) {
             About Dogs
           </a>
         </li>
-        {/* <li className="nav-item">
-          <a
-            href="#logout"
-            onClick={() => props.handlePageChange("logout")}
-            className={props.currentPage === "LogOut" ? "nav-link active" : "nav-link"}
-          >
-            Log out
-          </a>
-        </li> */}
       </ul>
     </div>
     );
