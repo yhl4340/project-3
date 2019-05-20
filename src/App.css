@@ -1,8 +1,5 @@
 .App {
   text-align: center;
-  /* font-family: 'Schoolbell', cursive; */
-  
-  
 }
 
 .App-logo {
@@ -28,7 +25,6 @@
 }
 body{
   font-family: 'Fredoka One', cursive;
-  /* font-family: 'Luckiest Guy', cursive; */
   font-size: 18px;
 }
 
@@ -75,6 +71,30 @@ a.nav-link {
   padding:0!important;
   color:white;
   font-size:20px;
+}
+ #loginOne {
+  margin-left:1330px;
+  margin-top:-70px;
+  z-index: 10;
+  background:none!important;
+  border:none; 
+  padding:0!important;
+  font-size:20px;
+}  
+.logout {
+  margin-left:-200px;
+  margin-top:-150px;
+  z-index: 10;
+  background:none!important;
+  border:none; 
+  padding:0!important;
+  font-size:20px;
+}
+#pawIcon {
+  width:40px;
+  height: 40px;
+  color:white;
+  margin-bottom:40px;
 }
 
 /* h1 img{

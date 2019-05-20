@@ -3,7 +3,9 @@ import Auth from "../Auth";
 import Nav from "./Nav";
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHeart } from "react-icons/fa";
+import icon from '../paw_icon.png'
+
+
 
 class Main extends Component {
   render() {
@@ -22,12 +24,14 @@ class Main extends Component {
             </a>
             <h1>
                 A Dog's Love
-                <FontAwesomeIcon icon="faHeart" size="4x" />
+                <img src={icon} id='pawIcon'alt='icon'></img>
+                {/* <FontAwesomeIcon icon="faPaw" size="4x" /> */}
             </h1>
             <h3>
-               <p> One in Five dogs never leaves the shelther</p>
+              <p> One in Five dogs never leave the shelter
                 <br/>
-                <p>Let's adopt better!</p> 
+                Let's adopt better!
+              </p> 
             </h3>
 
         {/* //     <h1 className='App-title'>
