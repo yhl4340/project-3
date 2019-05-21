@@ -9,7 +9,7 @@ class Secret extends Component {
     return (
       <div className="container-fluid">
         <Nav {...this.props}/>
-       {!this.props.auth.isAuthenticated()&& 
+       {/* {!this.props.auth.isAuthenticated()&& 
         <a href="#">
           <button
             onClick={this.props.auth.login}
@@ -24,7 +24,7 @@ class Secret extends Component {
           <button onClick={this.props.auth.logout} className="logout">
             Log Out
           </button>
-        </a>
+        </a> */}
        
         <div className="welcomeMsg">
           <span>Welcome, {this.props.name}

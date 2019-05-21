@@ -25,6 +25,7 @@ function Nav(props) {
           </a>
         </li>
         <li className='nav-item'>
+        {!props.auth.isAuthenticated()&& 
         <a href="#">
           <button
             onClick={props.auth.login}
@@ -34,11 +35,12 @@ function Nav(props) {
             Log In
           </button>
         </a>
-      </li>
-      <li className='nav-item'>
+       }
+       </li>
+      <li className='nav-item'> 
       <a href="#">
           <button
-            onClick={props.auth.login}
+            onClick={props.auth.logout}
             className="btn btn-lg-primary"
             id="logout"
           >
