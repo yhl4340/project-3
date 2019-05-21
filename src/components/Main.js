@@ -9,17 +9,10 @@ class Main extends Component {
   render() {
     console.log("test");
     return (
-      <div className="container-fluid">
-        <div id='background'>
-            <Nav/>
-            <a href='#'><button
-                    onClick={this.props.auth.login}
-                    className="btn btn-lg-primary"
-                    id="login"
-                >
-                    Log In
-            </button>
-            </a>
+      <div id='background'>
+          <div className="container-fluid">
+            <Nav {...this.props}/>
+           
             <h1>
                 A Dog's Love
                 <img src={icon} id='pawIcon'alt='icon'></img>
@@ -30,12 +23,6 @@ class Main extends Component {
                 Let's adopt better!
               </p> 
             </h3>
-
-        {/* //     <h1 className='App-title'>
-            // //     <p>Hey {this.props.name}, Here is the Main page
-            // //     {/* <img src={this.props.pic}/> */}
-        {/* //     </p> */}
-        {/* </h1> */}
         {/* {!this.props.auth.isAuthenticated()&& */}
         {/* <div> */}
 

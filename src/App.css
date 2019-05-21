@@ -2,12 +2,6 @@
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
 .App-header {
   background-color: #282c34;
   /* min-height: 100vh; */
@@ -28,23 +22,20 @@ body{
   font-size: 18px;
 }
 
-#background{
+#background {
+  /* margin-top: 25px; */
   background-image: url('./repaw.png');
-  /* height: 96vh;
-  width: 100%;
-  background-size:cover; */
-  min-height: 100%;
-  min-width: 1024px;
-	
+  /* background-position-x: 2%; */
+  background-size: 100% 100%;
+  min-height: 100vh;
+  min-width: 100%;
   /* Set up proportionate scaling */
-  width: 100%;
-  height: auto; 
-	
+  /* width: 100%;
+  height: auto;  */
   /* Set up positioning */
-  position: fixed;
+  /* position: fixed;
   top: 0;
-  left: 0;  
-
+  left: 0;   */ 
 }
 h1{
   font-size:80px;
@@ -55,21 +46,28 @@ h3 {
   color:white;
   margin-top:150px;
   margin-left:180px;
-  
 }
-a.nav-link {
-  color:gray;
+ a.nav-link {
+  color:white;
   margin-right:30px;
   font-size:20px;
 }
-#login{
-  margin-left:1350px;
-  margin-top:-75px;
+/* #login{
+  /* margin-left:1350px; */
+  /* margin-top:-75px;
   z-index: 10;
   background:none!important;
   border:none; 
   padding:0!important;
   color:white;
+  font-size:20px;
+}  */
+#login, #logout {
+  margin:10px 20px auto 20px;
+  background:none!important;
+  border:none; 
+  padding:0!important;
+  color:gray;
   font-size:20px;
 }
  #loginOne {
@@ -82,15 +80,6 @@ a.nav-link {
   font-size:20px;
   display:inline;
 }  
-.logout {
-  margin-left:-200px;
-  margin-top:-150px;
-  z-index: 10;
-  background:none!important;
-  border:none; 
-  padding:0!important;
-  font-size:20px;
-}
 #pawIcon {
   width:40px;
   height: 40px;
