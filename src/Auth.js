@@ -19,7 +19,7 @@ export default class Auth {
     // clientID: process.env.AUTH0_CLIENT_ID,
     
     domain:'dev-67ou39ym.auth0.com',
-    clientID: '8nVmn5vMJjRjvqjYh4X57ZU73xeotL5i',
+    clientID: 'ajhhOs9tIUxyIh7kchUZWN58Y9zItDlI',
     audience: 'https://dev-67ou39ym.auth0.com/userinfo',
     redirectUri: 'http://localhost:3000/callback',
     responseType: 'token id_token', 

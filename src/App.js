@@ -7,7 +7,7 @@ import NotFound from './components/Notfound';
 import Auth from './Auth';
 import Callback from './components/Callback';
 import Nav from './components/Nav';
-import Jumbotron from './components/Jumbotron';
+import Jumbotron from './components/UserInfo';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faExclamationCircle} from '@fortawesome/free-solid-svg-icons';
@@ -44,7 +44,7 @@ class App extends Component {
   return (
     // <Router>
     <div>
-      {/* <Jumbotron /> */}
+     
       {mainComp}
       {/* <Nav/> */}
       {/* <Switch>
@@ -55,12 +55,6 @@ class App extends Component {
        */}
       {/*      
       <header className="App-header"> */}
-
-      {/* <h1><span>Welcome,{this.props.name}</span>
-        <img src={this.props.pic}/> 
-        </h1>
-      </header>
-      <h4>Routes: {mainComp}</h4> */}
     </div>
   );
   }

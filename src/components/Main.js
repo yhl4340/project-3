@@ -9,7 +9,7 @@ class Main extends Component {
   render() {
     console.log("test");
     return (
-      <div id='background'>
+      <div id='background' className='responsive-img'>
           <div className="container-fluid">
             <Nav {...this.props}/>
            
@@ -18,7 +18,7 @@ class Main extends Component {
                 <img src={icon} id='pawIcon'alt='icon'></img>
             </h1>
             <h3>
-              <p> One in Five dogs never leave the shelter
+              <p className='flow-text'> One in Five dogs never leave the shelter
                 <br/>
                 Let's adopt better!
               </p> 

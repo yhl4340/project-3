@@ -1,38 +1,47 @@
 import React, { Component } from "react";
 import logo from "../logo.svg";
 import Nav from "./Nav";
-import Auth from '../Auth';
+import Auth from "../Auth";
+import UserInfo from "./UserInfo";
 
 class Secret extends Component {
   render() {
     console.log("getting here?");
     return (
-      <div className="container-fluid">
-        <Nav {...this.props}/>
-       {/* {!this.props.auth.isAuthenticated()&& 
-        <a href="#">
-          <button
-            onClick={this.props.auth.login}
-            className="btn btn-lg-primary"
-            id="loginOne"
-          >
-            Log In
-          </button>
-        </a>
-       }
-        <a href="#">
-          <button onClick={this.props.auth.logout} className="logout">
-            Log Out
-          </button>
-        </a> */}
-       
-        <div className="welcomeMsg">
-          <span>Welcome, {this.props.name}
-          <img src={this.props.pic} />
-          </span>
+      <div>
+        <Nav {...this.props} />
+        <div className="container">
+          <div className="welcomeMsg" style={{ marginTop: 20 }}>
+            <span className="flow-text">
+              Welcome, {this.props.name}
+              <img src={this.props.pic} className="circle responsive-img" />
+            </span>
+          </div>
+          <p> Please take moment to fill out the following </p>
+          <br />
+          <UserInfo {...this.props}/>
+
+          {/* <div class="row">
+            <div class="col s12 m7">
+              <div class="card">
+                <div class="card-image">
+                  <img src={this.props.picture} className="circle responsive-img"/> */}
+
+                  {/*       
+                <div class="card-content">
+                  <p>Name:{this.props.name}.</p>
+                  <p>Nick Name:{this.props.nickname}.</p>
+                </div>
+
+              <div class="card-action">
+                <a href="#">This is a link</a>
+              </div>
+               */}
+                {/* </div>
+              </div>
+            </div>
+          </div> */}
         </div>
-        <br/>
-        <h4>content after logged in</h4>
       </div>
     );
   }

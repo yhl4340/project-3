@@ -17,14 +17,20 @@
 .App-link {
   color: #61dafb;
 }
-body{
-  font-family: 'Fredoka One', cursive;
-  font-size: 18px;
-}
 
+.flow-text{
+  font-size: 40px;
+  font-family: 'Fresca', sans-serif;
+  /* font-family: 'Open Sans', sans-serif; */
+}
+h1 {
+  font-family: 'Fredoka One', cursive;
+  
+}
 #background {
   /* margin-top: 25px; */
   background-image: url('./repaw.png');
+  z-index: 0;
   /* background-position-x: 2%; */
   background-size: 100% 100%;
   min-height: 100vh;
@@ -47,11 +53,7 @@ h3 {
   margin-top:150px;
   margin-left:180px;
 }
- a.nav-link {
-  color:white;
-  margin-right:30px;
-  font-size:20px;
-}
+
 /* #login{
   /* margin-left:1350px; */
   /* margin-top:-75px;
@@ -68,7 +70,8 @@ h3 {
   border:none; 
   padding:0!important;
   color:gray;
-  font-size:20px;
+  font-size:18px;
+  margin-top:0;
 }
  #loginOne {
   margin-left:1330px;
@@ -80,6 +83,9 @@ h3 {
   font-size:20px;
   display:inline;
 }  
+.i {
+  margin-left:-5px;
+}
 #pawIcon {
   width:40px;
   height: 40px;
